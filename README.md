@@ -91,3 +91,18 @@ Then, go to `localhost:15672` and you'll see the cluster is already formed up.
 ## Future work:
 1. Allow setting a different number of replicas
 
+## Sample:
+export NAMESPACE=class100-app && \
+export NAMESPACE=class100-app && \
+export RBAC=TRUE && \
+export DOCKER_REPOSITORY=anteoy && \
+export RABBITMQ_REPLICAS=3 && \
+export RABBITMQ_DEFAULT_USER=username && \
+export RABBITMQ_DEFAULT_PASS=password && \
+export RABBITMQ_ERLANG_COOKIE=secret && \
+export RABBITMQ_EXPOSE_MANAGEMENT=TRUE && \
+export RABBITMQ_MANAGEMENT_SERVICE_TYPE=NodePort && \
+export RABBITMQ_HA_POLICY='{\"ha-mode\":\"all\"}' && \
+export RABBITMQ_LOG_LEVEL=info && \
+export SUDO=sudo && \
+make deploy

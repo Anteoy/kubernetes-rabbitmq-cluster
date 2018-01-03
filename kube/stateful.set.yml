@@ -15,9 +15,9 @@ spec:
       - name: {{APP_NAME}}
         image: {{IMAGE_NAME}}
         resources:
-          requests:
-            cpu: 300m
-            memory: 5120Mi
+#          requests:
+#            cpu: 300m
+#            memory: 5120Mi
         ports:
           - name: queue-port
             containerPort: 5672
